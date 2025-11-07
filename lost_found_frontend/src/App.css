@@ -1,0 +1,53 @@
+/* src/App.css */
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(115deg, #222d2f 0%, #14535c 55%, #834b29 100%);
+  /* Deep charcoal, dark teal, faded amber blend */
+  transition: background 0.8s;
+}
+
+
+.card {
+  background: rgba(165, 154, 255, 0.22) !important; /* gentle purple, slightly transparent */
+  border-radius: 18px !important;
+  box-shadow: 0 8px 32px rgba(30, 30, 100, 0.09);
+  border: 2px solid #7d6af3 !important;
+}
+
+
+
+/* Interactive button effects */
+.btn {
+  transition: transform 0.19s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.19s;
+  font-weight: 600;
+  box-shadow: 0 1px 12px rgba(60, 110, 255, 0.08);
+}
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: scale(0.95);
+  box-shadow: 0 2px 16px rgba(60, 110, 255, 0.20);
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 32px rgba(40, 160, 224, 0.17);
+  opacity: 0.97;
+}
+
+/* Heading animation (optional) */
+h2, h1 {
+  animation: fadeInSlide 1s cubic-bezier(0.32, 2, 0.55, 1) 1;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
