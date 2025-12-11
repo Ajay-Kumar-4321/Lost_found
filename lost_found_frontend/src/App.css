@@ -1,0 +1,182 @@
+/* src/App.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  background: rgba(165, 154, 255, 0.22) !important; /* gentle purple, slightly transparent */
+  border-radius: 18px !important;
+  box-shadow: 0 8px 32px rgba(30, 30, 100, 0.09);
+  border: 2px solid #7d6af3 !important;
+}
+
+/* Interactive button effects */
+.btn {
+  transition: transform 0.19s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.19s;
+  font-weight: 600;
+  box-shadow: 0 1px 12px rgba(60, 110, 255, 0.08);
+}
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: scale(0.95);
+  box-shadow: 0 2px 16px rgba(60, 110, 255, 0.20);
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 32px rgba(40, 160, 224, 0.17);
+  opacity: 0.97;
+}
+
+/* Heading animation (optional) */
+h2, h1 {
+  animation: fadeInSlide 1s cubic-bezier(0.32, 2, 0.55, 1) 1;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* App.css or backgrounds.css */
+.bg-login {
+  background-image: url('/public/login.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.bg-dashboard {
+  background-image: url('/public/dashboard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.bg-admin {
+  background-image: url('/public/login.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.bg-report-lost {
+  background-image: url('/public/lost-found.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Add more as needed... */
+.bg-report-found {
+  background-image: url('/public/lost-found.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.bg-matched {
+  background-image: url('/public/matched.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.bg-manage {
+  background-image: url('/public/manage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* ===== Custom button color classes (new) ===== */
+
+/* Dashboard action buttons */
+.btn-dashboard-lost {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+}
+
+.btn-dashboard-found {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.btn-dashboard-matched {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #343a40;
+}
+
+.btn-dashboard-manage {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+/* Logout button */
+.btn-dashboard-logout {
+  border-color: #343a40;
+  color: #343a40;
+  background-color: #ffffff;
+}
+
+/* Login button (non-default teal instead of blue) */
+.btn-login-primary {
+  background-color: #20c997;
+  border-color: #20c997;
+  color: #fff;
+}
+
+/* Stronger hover colors for custom buttons (works with global .btn hover) */
+.btn-dashboard-lost:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+.btn-dashboard-found:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-dashboard-matched:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+.btn-dashboard-manage:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.btn-dashboard-logout:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn-login-primary:hover {
+  background-color: #17a589;
+  border-color: #17a589;
+}
